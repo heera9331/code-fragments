@@ -152,7 +152,10 @@ function Templates() {
         </ul>
 
         <Separator className="h-10" />
-
+        
+        <h2 className="font-semibold text-3xl">3. Dashboard</h2>
+        <p>This one is the very simple dashboard only for you</p>
+      <p></p>
       </div>
 
 

@@ -46,8 +46,8 @@ function HomePage() {
       {/* ========= main =============== */}
       <div className="md:col-span-12 lg:col-span-8 col-span-12 pr-2">
         <Toaster position="top-center" />
-        <section className="min-h-[60vh] md:min-h-[90vh] flex flex-col justify-center items-center border-b">
-          <h1 className="mb-2 text-center">
+        <section className="main-gradient2 min-h-[60vh] md:min-h-[90vh] flex flex-col justify-center items-center border-b">
+          <h1 className="mb-2 text-center text-white">
             Most usable UI components for website/app
           </h1>
           <Button
