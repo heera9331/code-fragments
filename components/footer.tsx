@@ -3,6 +3,8 @@ import { Button } from '@/components/ui/button';
 
 export function Footer() {
   return ( 
+    <>
+     
     <footer className="border-t max-w-[1440px] mx-auto pt-4">
       <div className="container p-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -60,5 +62,6 @@ export function Footer() {
         </div>
       </div>
     </footer>
+    </>
   );
 }

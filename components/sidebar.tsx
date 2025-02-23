@@ -13,6 +13,8 @@ import {
   Palette,
   Component,
   Layout,
+  TestTube,
+  Download,
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -36,9 +38,9 @@ const sidebarItems = [
     name: "Components",
     icon: Component,
     items: [
-      { name: "UI Components", href: "/components/ui" },
-      { name: "Layout Components", href: "/components/layout" },
-      { name: "Form Components", href: "/components/form" },
+      { name: "Forms", href: "/components/forms" },
+      { name: "Loaders", href: "/components/loaders" },
+      { name: "Cards", href: "/components/cards" },
     ],
   },
   {
@@ -58,6 +60,16 @@ const sidebarItems = [
       { name: "Color Palettes", href: "/palettes" },
       { name: "Icons", href: "/icons" },
     ],
+  },
+  {
+    name: "Updates",
+    icon: Download,
+    items: [{ name: "Main", href: "/updates" }],
+  },
+  {
+    name: "Tests",
+    icon: TestTube,
+    items: [{ name: "Main", href: "/tests" }],
   },
 ];
 
@@ -87,7 +99,7 @@ export function Sidebar({ className }: SidebarProps) {
                 </div>
               </AccordionTrigger>
               <AccordionContent>
-                <div className="pl-6 space-y-1 mt-2">
+                <div className="pl-2 space-y-1 mt-2">
                   {section.items.map((item) => {
                     const isActive = pathname === item.href;
                     return (
@@ -95,7 +107,7 @@ export function Sidebar({ className }: SidebarProps) {
                         key={item.name}
                         href={item.href}
                         className={cn(
-                          "flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-colors",
+                          "my-2 flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-colors",
                           isActive
                             ? "bg-primary text-primary-foreground"
                             : "hover:bg-muted"

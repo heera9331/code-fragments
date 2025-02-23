@@ -27,7 +27,7 @@ export default function RootLayout({
             <Header />
             <div className="flex">
               <Sidebar className="w-2/8" />
-              <main className="w-6/8 py-6 px-4">{children}</main>
+              <main className="w-6/8 p-4 w-full">{children}</main>
             </div>
             <Footer />
           </div>
